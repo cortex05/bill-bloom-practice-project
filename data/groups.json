@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "ggggg00000",
+    "name": "Normandy take 2",
+    "members": ["uuuuu00002", "uuuuu00001"],
+    "createdBy": "uuuuu00002"
+  },
+  {
+    "_id": "ggggg00001",
+    "name": "Cerberus",
+    "members": ["uuuuu00003"],
+    "createdBy": "uuuuu00003"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "uuuuu00000",
+    "username": "lawBringer",
+    "email": "lawbringer@gmail.com",
+    "password": "abc123"
+  },
+  {
+    "_id": "uuuuu00001",
+    "username": "GarrV",
+    "email": "",
+    "password": "abc123"
+  },
+  {
+    "_id": "uuuuu00002",
+    "username": "theShepard",
+    "email": "n7@gmail.com",
+    "password": "abc123"
+  },
+  {
+    "_id": "uuuuu00003",
+    "username": "theIllusiveMan",
+    "email": "tim@gmail.com",
+    "password": "abc123"
+  }
+]
