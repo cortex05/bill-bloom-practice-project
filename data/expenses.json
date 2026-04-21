@@ -7,7 +7,7 @@
     "participants": ["uuuuu00002", "uuuuu00001"],
     "category": "Food",
     "type": "group",
-    "groupId": "ggggg00000",
+    "groupId": "g1",
     "date": "2024-06-01T12:00:00Z"
   },
   {
@@ -18,7 +18,7 @@
     "participants": ["uuuuu00002", "uuuuu00001", "uuuuu00000"],
     "category": "Travel",
     "type": "group",
-    "groupId": "ggggg00000",
+    "groupId": "g1",
     "date": "2024-06-01T16:00:00Z"
   },
   {
@@ -29,7 +29,7 @@
     "participants": ["uuuuu00002", "uuuuu00001", "uuuuu00000"],
     "category": "Travel",
     "type": "group",
-    "groupId": "ggggg00000",
+    "groupId": "g1",
     "date": "2024-06-01T18:00:00Z"
   },
   {
@@ -40,7 +40,7 @@
     "participants": ["uuuuu00002", "uuuuu00001"],
     "category": "Entertainment",
     "type": "group",
-    "groupId": "ggggg00000",
+    "groupId": "g1",
     "date": "2024-06-01T18:00:00Z"
   },
   {
@@ -51,7 +51,7 @@
     "participants": ["uuuuu00003"],
     "category": "Travel",
     "type": "group",
-    "groupId": "ggggg00001",
+    "groupId": "g2",
     "date": "2024-06-05T18:00:00Z"
   },
   {
@@ -62,7 +62,7 @@
     "participants": ["uuuuu00003"],
     "category": "Food",
     "type": "group",
-    "groupId": "ggggg00001",
+    "groupId": "g2",
     "date": "2024-06-08T18:00:00Z"
   },
   {
@@ -73,7 +73,7 @@
     "participants": ["uuuuu00003"],
     "category": "Health",
     "type": "group",
-    "groupId": "ggggg00001",
+    "groupId": "g2",
     "date": "2024-06-08T18:00:00Z"
   },
   {
@@ -84,7 +84,7 @@
     "participants": ["uuuuu00003"],
     "category": "Health",
     "type": "group",
-    "groupId": "ggggg00001",
+    "groupId": "g2",
     "date": "2024-06-08T18:00:00Z"
   },
   {

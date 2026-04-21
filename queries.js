@@ -81,14 +81,52 @@ const getUserGroupCount = async (userId) => {
 }
 
 // 6. Based on the expenses created in a group, what is the duration of the trip?
+const getTripDuration = async (groupId) => {
+  const expenses = await Expense.find({ groupId });
+  if (expenses.length === 0) {
+    return 0;
+  }
+  const dates = expenses.map(expense => expense.date);
+  const minDate = new Date(Math.min(...dates));
+  const maxDate = new Date(Math.max(...dates));
+  const duration = (maxDate - minDate) / (1000 * 60 * 60 * 24); // duration in days
+  return duration;
+}
 
 // 7. What are the top 3 highest personal expenses for every user?
+const getTopPersonalExpenses = async (userIdsArray) => {
+  const expenses = userIdsArray.map(userId => Expense.find({ paidBy: userId, type: 'personal' }).sort({ amount: -1 }).limit(3));
+  return await Promise.all(expenses);
+}
 
 // 8. What personal expenses were created within a specific date range for a given user?
+const getPersonalExpensesByDateRange = async (userId, startDate, endDate) => {
+  const expenses = await Expense.find({
+    paidBy: userId,
+    type: 'personal',
+    date: { $gte: new Date(startDate), $lte: new Date(endDate) }
+  });
+  return expenses;
+}
 
 // 9. What is the total personal expense for a user?
+const getTotalPersonalExpense = async (userId) => {
+  const expenses = await Expense.find({ paidBy: userId, type: 'personal' });
+  return expenses.reduce((total, expense) => total + expense.amount, 0);
+}
 
 // 10. What is the total personal expense based on category for a user?
+const getPersonalExpenseByCategory = async (userId) => {
+  const expenses = await Expense.find({ paidBy: userId, type: 'personal' });
+  const categoryTotals = {};
+  expenses.forEach(expense => {
+    if (!categoryTotals[expense.category]) {
+      categoryTotals[expense.category] = 0;
+    }
+    categoryTotals[expense.category] += expense.amount;
+  });
+  return categoryTotals;
+}
 
 async function main() {
   try {
